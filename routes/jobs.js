@@ -3,9 +3,10 @@ import Job from "../models/Job.js";
 
 const router = express.Router();
 
-router.get("/test", (req, res) => {
-    res.send("Ok!")
-})
+router.get("/add", (req, res) => {
+    res.render("add");
+});
+
 
 // Add job via POST
 router.post("/add", (req, res) => {

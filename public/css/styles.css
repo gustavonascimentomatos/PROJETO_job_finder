@@ -38,6 +38,10 @@ a {
     border-color: #f03e3e;
 }
 
+#job-list-title {
+    text-align: center;
+    font-weight: bold;
+}
 
 /* banner */
 #top-container {
@@ -202,7 +206,6 @@ a {
 
 #form-box button {
     display: flex;
-
     font-weight: bold;
     background-color: #f03e3e;
     border: 1px solid transparent;
@@ -215,4 +218,26 @@ a {
     color: #f03e3e !important;
     background-color: #fff !important;
     border-color: #f03e3e !important;
+}
+
+footer {
+    text-align: center;
+    background-color: #f8f9fa;
+    padding: 0;
+    margin: 0;
+    left:0;
+    border-top: 1px solid #ccc;
+}
+
+#links {
+    font-weight: bold;
+    padding-top: 10px;
+    margin: 0;
+    color: #000;
+}
+
+#create {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #000;
 }
