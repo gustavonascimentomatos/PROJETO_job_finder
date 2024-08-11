@@ -148,7 +148,6 @@ a {
     border-color: #f03e3e;
 }
 
-
 .new-job-label {
     background-color: #ffd500;
     color: #4d5154;
@@ -164,4 +163,56 @@ a {
 
 .new-job .new-job-label {
     display: block;
+}
+
+/* add page */
+#add-form-container {
+    margin-top: 100px;
+}
+
+#form-box {
+    padding: 50;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, .15);
+    border-radius: 4px;
+    background-color: #fff;
+    margin-bottom: 50px;
+}
+
+#add-form-container h1 {
+    margin-bottom: 30px;
+}
+
+#add-form-container h2 {
+    color: #f03e3e;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+#add-form-container form label {
+    font-weight: bold;
+}
+
+#add-form-container form input, #add-form-container form textarea {
+    border: 2px solid #ccc;
+    background-color: #f8f9fa;
+}
+
+#form-box button {
+    display: flex;
+
+    font-weight: bold;
+    background-color: #f03e3e;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    margin: 20px auto;
+    padding: 15px;
+}
+
+.btn-primary:hover {
+    color: #f03e3e !important;
+    background-color: #fff !important;
+    border-color: #f03e3e !important;
 }
