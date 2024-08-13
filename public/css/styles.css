@@ -106,16 +106,20 @@ a {
     padding: 15px 80px;
     color: #212529;
     height: 120px;
+    border-radius: 4px;
 }
 
 #job-list .list-group-item p {
-    font-size: 14px;
+    font-size: 15px;
     margin-bottom: 5px;
+    font-weight: bold;
 }
 
 #job-list .list-group-item.new-job {
     border: none;
     background-color: #fff7cc;
+    border: 1px solid lightgray;
+    border-radius: 4px;
 }
 
 #job-list-title {
@@ -157,10 +161,10 @@ a {
     color: #4d5154;
     text-transform: uppercase;
     font-weight: bold;
-    padding: 5px 10px;
+    padding: 3px 3px;
     position: absolute;
-    right: 250px;
-    top: 40px;
+    left: 025px;
+    top: 60px;
     display: none;
     border-radius: 5px;
 }

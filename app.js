@@ -6,6 +6,7 @@ import path from "path";
 import database from './db/connection.js';
 import bodyParser from "body-parser";
 import router from "./routes/jobs.js";
+import Job from "./models/Job.js"
 
 // Criação de __dirname para uso em ESM
 const __filename = fileURLToPath(import.meta.url);
@@ -42,8 +43,19 @@ database
 
 // routes
 app.get("/", (req, res) => {
-    res.render("index")
+    
+    Job.findAll({ order: [
+        ["createdAt", "DESC"]
+    ]})
+    .then(jobs => {
+
+        res.render("index", {
+            jobs
+        });
+
+    });
+
 });
 
-// jobs routes
+// jobs rou tes
 app.use("/jobs", router);
