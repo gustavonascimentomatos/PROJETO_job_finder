@@ -56,11 +56,9 @@ app.get("/", (req, res) => {
             ["createdAt", "DESC"]
         ]})
         .then(jobs => {
-    
             res.render("index", {
                 jobs
             });
-    
         })
         .catch(Error => console.log(Error));
     } else {
@@ -70,12 +68,9 @@ app.get("/", (req, res) => {
             ["createdAt", "DESC"]
         ]})
         .then(jobs => {
-            console.log(search);
-            console.log(search);
             res.render("index", {
                 jobs, search
             });
-    
         })
         .catch(Error => console.log(Error));;
     }
