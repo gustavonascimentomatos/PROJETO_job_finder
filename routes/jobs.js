@@ -3,10 +3,20 @@ import Job from "../models/Job.js";
 
 const router = express.Router();
 
+// detalhe da vaga
+router.get("/view/:id", (req, res) => Job.findOne({
+    where: {id: req.params.id}
+    }).then(job => {
+        res.render("view", {
+            job
+        });
+    }).catch(Error => console.log(Error))
+);
+
+// form da rota de envio
 router.get("/add", (req, res) => {
     res.render("add");
 });
-
 
 // Add job via POST
 router.post("/add", (req, res) => {

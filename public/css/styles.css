@@ -245,3 +245,46 @@ footer {
     margin-bottom: 10px;
     color: #000;
 }
+
+
+/* job-view */
+#job-view-container {
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+#job-view-container h1 {
+    margin-bottom: 30px;
+}
+
+#img-container {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+#img-container img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 1px solid #212529;
+}
+
+.job-desc {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.main-color, .link-view {
+    color: #f03e3e;
+}
+
+.link-view:hover {
+    text-decoration: none;
+    font-weight: bold;
+    color: #f03e3e;
+}
