@@ -4,10 +4,10 @@
             <img src="/img/tech.png" alt="Image Company">
         </div>
         <div class="col-md-12">
-            <h1 class="main-color">{{job.dataValues.title}}</h1>
-            <p class="bold">Quem eles estão buscando:</p>
+            <h1 id="title-view-vaga" class="main-color">{{job.dataValues.title}}</h1>
+            <p  id="subtitle-view-vaga" class="bold">Responsabilidades:</p>
             <p class="job-desc">{{job.dataValues.description}}</p>
-            <p><span class="bold">O salário oferecido é de:</span> R$ {{job.dataValues.salary}},00</p>
+            <p><span class="bold">Salário oferecido:</span> R$ {{job.dataValues.salary}},00</p>
             <p> 
                 Para trabalhar na empresa <span class="bold main-color">{{job.dataValues.company}}</span> envie um e-mail para: <a class="link-view" href="email:to{{job.dataValues.email}}">{{job.dataValues.email}}</a>
             </p>
