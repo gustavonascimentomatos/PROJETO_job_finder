@@ -23,7 +23,7 @@
                 <ul id="job-list" class="list-group">
                     {{#each jobs}}
                         <li class="list-group-item {{#if dataValues.new_job }}new-job{{/if}}">
-                            <img src="/img/tech.png" alt="Image company">
+                            <img src="/logo/{{dataValues.id}}.jpg" alt="Image company">
                             <p>{{dataValues.company}}</p>
                             <h2>{{dataValues.title}}</h2>
                             <p>R$ {{dataValues.salary}},00</p>

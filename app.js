@@ -10,6 +10,7 @@ import Job from "./models/Job.js"
 import Sequelize from "sequelize";
 import { serialize } from "v8";
 
+
 // Criação de __dirname para uso em ESM
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);

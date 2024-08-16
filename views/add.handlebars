@@ -5,7 +5,7 @@
         </div>
         <div id="form-box" class="col-md-12">
             <h2>Preencha os dados da melhor forma possível para encontrar mais rápido seu dev!</h2>
-            <form action="/jobs/add" method="POST">
+            <form action="/jobs/add" method="POST" enctype="multipart/form-data">
                 <div class="form-group">
                     <label for="title">Título da vaga:</label>
                     <input type="text" class="form-control" name="title" id="title" placeholder="Digite o título da vaga..." required>
@@ -27,6 +27,11 @@
                     <label for="salary">Salário oferecido:</label>
                     <input type="text" class="form-control" name="salary" id="salary" placeholder="Digite o salário da vaga..." required>
                 </div>
+                
+                <div class="logo-group">
+                    <input type="file" name="file">
+                </div>
+
                 <input type="hidden" name="new_job" value="1">
                 <button type="submit" class="btn btn-primary">Cadastrar Vaga!</button>
             </form>
